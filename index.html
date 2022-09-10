@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>The count: <span id="count">0</span></p>
+    <p>The count: <span id="count"> 0 </span></p>
     <button id="increase">increases</button>
 
     <section class="main">
       <div>
         <label for="">Name</label> <br />
-        <input type="text" value="JS" />
-        <button id="send-name">Send Name</button>
-        <button id="delete-name">Delete Name</button>
+        <input id="name" type="text" value="JS" />
+        <button onclick="setValue('name', 'name')" id="send-name">Send Name</button>
+        <button onclick="deleteValue('name')" id="delete-name">Delete Name</button>
       </div>
       <div>
         <label for="">Email</label> <br />
-        <input type="text" value="example@gmail.com" />
-        <button id="send-email">Send Email</button>
-        <button id="delete-email">Delete Email</button>
+        <input id="email" type="text" value="example@gmail.com" />
+        <button onclick="setValue('email', 'email')" id="send-email">Send Email</button>
+        <button onclick="deleteValue('email')" id="delete-email">Delete Email</button>
       </div>
       <div>
         <label for="">Message</label> <br />
-        <textarea name="" id="" cols="30" rows="5"></textarea> <br />
-        <button id="send-message">Send Message</button>
-        <button id="delete-message">Delete Message</button>
+        <textarea name="" id="message" cols="30" rows="5"></textarea> <br />
+        <button onclick="setValue('message', 'message')" id="send-message">Send Message</button>
+        <button onclick="deleteValue('message')" id="delete-message">Delete Message</button>
       </div>
       <br />
       <button id="reset">Reset</button>

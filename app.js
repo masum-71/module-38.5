@@ -35,7 +35,7 @@ const obj = {
   lastName: "linkon",
 };
 
-localStorage.setItem("name", JSON.stringify(obj));
+localStorage.setItem("fullName", JSON.stringify(obj));
 
 //level: 2
 const count = document.getElementById("count");
@@ -51,4 +51,24 @@ count.innerText = get;
 
 //level: 3
 
+//get Value from input field
+const getValue = (id) => {
+  const inputValue = document.getElementById(id).value;
+  return inputValue;
+};
 
+//onclick function for add value on localStorage
+function setValue(name, id) {
+  const nameValue = getValue(id);
+  localStorage.setItem(name, nameValue);
+}
+
+//onclick function for delete value from localStorage
+function deleteValue(name) {
+  localStorage.removeItem(name);
+}
+
+//reset all value
+document.getElementById("reset").addEventListener("click", () => {
+  localStorage.clear();
+});
