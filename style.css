@@ -1,0 +1,35 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+input,
+textarea {
+  margin: 15px 0px;
+}
+
+#send-name,
+#send-email,
+#send-message {
+  background-color: green;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+#delete-name,
+#delete-email,
+#delete-message,
+#reset {
+  background-color: red;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+

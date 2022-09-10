@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 38.5</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>The count: <span id="count">0</span></p>
+    <button id="increase">increases</button>
 
-
+    <section class="main">
+      <div>
+        <label for="">Name</label> <br />
+        <input type="text" value="JS" />
+        <button id="send-name">Send Name</button>
+        <button id="delete-name">Delete Name</button>
+      </div>
+      <div>
+        <label for="">Email</label> <br />
+        <input type="text" value="example@gmail.com" />
+        <button id="send-email">Send Email</button>
+        <button id="delete-email">Delete Email</button>
+      </div>
+      <div>
+        <label for="">Message</label> <br />
+        <textarea name="" id="" cols="30" rows="5"></textarea> <br />
+        <button id="send-message">Send Message</button>
+        <button id="delete-message">Delete Message</button>
+      </div>
+      <br />
+      <button id="reset">Reset</button>
+    </section>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
